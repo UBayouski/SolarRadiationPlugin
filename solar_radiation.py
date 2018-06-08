@@ -1,3 +1,5 @@
+"""Solar Radiation Calculation Logic"""
+
 import datetime, dateutil.parser, json, math, os, pytz, urllib, yaml
 
 class SolarRadiation(object):
