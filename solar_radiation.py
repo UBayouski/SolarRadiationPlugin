@@ -105,8 +105,8 @@ class SolarRadiation(object):
     def hour_angle(hour):
         """The Hour Angle converts the local solar time (LST) into the number of degrees which the sun moves across the sky.
  
-        By definition, the Hour Angle is 0° at solar noon. Since the Earth rotates 15° per hour, 
-        each hour away from solar noon corresponds to an angular motion of the sun in the sky of 15°. 
+        By definition, the Hour Angle is 0 at solar noon. Since the Earth rotates 15 per hour, 
+        each hour away from solar noon corresponds to an angular motion of the sun in the sky of 15. 
         In the morning the hour angle is negative, in the afternoon the hour angle is positive.
         https://www.pveducation.org/pvcdrom/2-properties-sunlight/solar-time
 
