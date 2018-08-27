@@ -99,8 +99,8 @@ class SolarRadiation(object):
         declination_angle = math.radians(SolarRadiation.declination_angle(day));
         hour_angle = math.radians(SolarRadiation.hour_angle(hour));
         elevation_angle = SolarRadiation.elevation_angle(hour_angle, declination_angle, latitude)
-        declanation = math.radians(90) - elevation_angle;
-        return 1 / (1E-4 + math.cos(declanation))
+        declination = math.radians(90) - elevation_angle;
+        return 1 / (1E-4 + math.cos(declination))
 
     @staticmethod
     def hour_angle(hour):
@@ -177,6 +177,8 @@ class SolarRadiation(object):
                 # We ignore case more than 1100 W/m2, because the peak solar radiation is 1 kW/m2
                 # http://www.pveducation.org/pvcdrom/average-solar-radiation
                 return 0 if result > 1100 else result
+
+            return 0
 
         return None
 
